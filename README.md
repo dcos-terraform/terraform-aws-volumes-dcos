@@ -7,7 +7,7 @@ EXAMPLE
 
 ```hcl
 module "agent_volumes" {
- source = "dcos-terraform/aws/volumes-dcos"
+ source = "dcos-terraform/volumes-dcos/aws"
  num                     = "3"
  instance_id             = ["id-ablsldhfa123", "id-blahblah1234", "id-abncsss43112"]
  availability_zone       = ["us-east-1a", "us-east-1b", "us-east-1c"]
