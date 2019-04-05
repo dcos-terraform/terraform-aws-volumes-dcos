@@ -23,11 +23,11 @@ module "agent_volumes" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | availability\_zone | AZ(s) of where to create the Volumes | list | n/a | yes |
-| disk\_type | Type of disk | string | `"gp2"` | no |
+| disk\_type | Disk Type to Leverage | string | `"gp2"` | no |
 | docker\_size | Size of the /var/lib/docker disk | string | `"100"` | no |
 | extra\_volume\_size | Size of an extra Volume | string | `"50"` | no |
 | instance\_id | The instance ID to attach the disks to | list | n/a | yes |
 | log\_size | Size of the /var/log disk | string | `"500"` | no |
 | mesos\_size | Size of the /var/lib/mesos disk | string | `"250"` | no |
-| num | Number of Instances | string | `"1"` | no |
+| num | How many instances should be created | string | `"1"` | no |
 
