@@ -1,5 +1,5 @@
 variable "num" {
-  description = "Number of Instances"
+  description = "How many instances should be created"
   default     = 1
 }
 
@@ -14,7 +14,7 @@ variable "availability_zone" {
 }
 
 variable "disk_type" {
-  description = "Type of disk"
+  description = "Disk Type to Leverage"
   default     = "gp2"
 }
 
