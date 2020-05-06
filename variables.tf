@@ -5,12 +5,12 @@ variable "num" {
 
 variable "instance_id" {
   description = "The instance ID to attach the disks to"
-  type        = "list"
+  type        = list(string)
 }
 
 variable "availability_zone" {
   description = "AZ(s) of where to create the Volumes"
-  type        = "list"
+  type        = list(string)
 }
 
 variable "disk_type" {
@@ -37,3 +37,4 @@ variable "log_size" {
   description = "Size of the /var/log disk"
   default     = 500
 }
+
